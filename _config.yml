@@ -2,7 +2,6 @@
 # Basic settings.
 #
 #baseurl: http://localhost:4000
-#baseurl: http://qckanemoto.github.io
 baseurl: http://luqitao.github.io
 #title: luqitao
 description: luqitao's Blog.
@@ -73,6 +72,7 @@ paginate_path: page/:num
 share_buttons: false
 ogp:
   image_url: http://luqitao.github.io/assets/img/dmx.jpg
+   #image_url: /assets/img/dmx.jpg
   fb:
     admin: # facebook admin id
     app_id: # facebook application id
