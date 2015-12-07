@@ -6,6 +6,6 @@ order: 1
 share: false
 ---
 
-[QckTheme](https://github.com/qckanemoto/jekyll-qck-theme) is a free and open-source theme for [Jekyll](http://jekyllrb.com/), licensed under the MIT License.
+我的研究兴趣：分布式存储、数据挖掘。目前主要研究分布式对象存储Ceph，结合社区需求在做一定的改进，欢迎交流。
 
-Enjoy! :smiley:
+Email: qutianshan0214@163.com
