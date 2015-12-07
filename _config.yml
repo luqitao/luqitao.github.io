@@ -80,8 +80,8 @@ ogp:
 #
 # Gems.
 #
-#gems:
-#   - jemoji
+gems:
+   - jemoji
 
 #
 # Styles: see "_sass/base/_variables.scss"
