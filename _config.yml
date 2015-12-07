@@ -1,8 +1,8 @@
 #
 # Basic settings.
 #
-#baseurl: http://localhost:4000
-baseurl: http://luqitao.github.io
+baseurl: http://localhost:4000
+#baseurl: http://luqitao.github.io
 title: luqitao's Blog.
 #description: luqitao's Blog.
 avatar: /assets/img/dmx.jpg
@@ -69,10 +69,10 @@ paginate_path: page/:num
 #
 # Social.
 #
+#
 share_buttons: false
 ogp:
-  image_url: http://luqitao.github.io/assets/img/dmx.jpg
-   #image_url: /assets/img/dmx.jpg
+    #image_url: http://localhost:4000/assets/img/dmx.jpg
   fb:
     admin: # facebook admin id
     app_id: # facebook application id
@@ -90,7 +90,7 @@ gems:
 #
 # !! Danger zone !!
 #
-
+gems: [jekyll-paginate]
 include: ["_pages"]
 
 markdown: redcarpet
