@@ -7,7 +7,18 @@ title: luqitao's Blog.
 #description: luqitao's Blog.
 avatar: /assets/img/dmx.jpg
 language: ja
+imageurl: "/images"
+uploads: "/uploads"
 
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "tianshan"
+      email: "luqt2011@163.com"
 
 #
 # Icons
@@ -17,7 +28,7 @@ icons:
   email: luqt2011@163.com
   github: luqitao
   bitbucket:
-  twitter: luqitao
+  twitter: 
   facebook:
   google_plus:
   tumblr:
@@ -42,8 +53,8 @@ permalink: pretty
 #
 # Scripts.
 #
-google_analytics: # e.g. UA-000000-01
-disqus: prettyverbose
+google_analytics: UA-60561225-1
+disqus: tianshan
 
 #
 # Localizations.
@@ -80,7 +91,7 @@ ogp:
 # Gems.
 #
 gems:
-   - jemoji
+  - jemoji
 
 #
 # Styles: see "_sass/base/_variables.scss"

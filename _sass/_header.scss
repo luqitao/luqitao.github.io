@@ -1,8 +1,8 @@
 .site-header {
     font-size: 2em;
     padding: 0.7em 0;
-    background-color: $brand-color;
-    border-top: 3px solid rgba(#000, .5);
+    //background-color: $brand-color;
+    border-bottom: 2px solid $brand-color;
     @media screen and (max-width: $mobile-width) {
         text-align: center;
     }
@@ -10,7 +10,7 @@
     .avatar {
         height: 3em;
         width: 3em;
-        border: 3px solid rgba(#fff, .7);
+        border: 3px solid rgba(#000, .2);
         border-radius: 1.5em;
         margin-right: 0.8em;
         float: left;

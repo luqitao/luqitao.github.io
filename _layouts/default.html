@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.language }}">
+<html lang="ja">
 <head>
     {% capture title %}{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}{% endcapture %}
 
@@ -21,7 +21,7 @@
 
     <link rel="shortcut icon" href="{{ '/favicon.ico' | prepend: site.baseurl }}" type="image/x-icon">
     <link rel="canonical" href="{{ url }}">
-    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl }}" />
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
 
     {% if page.eye_catch %}
     {% assign ogp_image_url = page.eye_catch %}
@@ -34,8 +34,9 @@
     <meta property="og:image" content="{{ ogp_image_url }}" />
     <meta property="og:url" content="{{ url }}" />
     <meta property="og:site_name" content="{{ site.title }}" />
+    <!--
     <meta property="fb:admins" content="{{ site.ogp.fb.admin }}" />
-    <meta property="fb:app_id" content="{{ site.ogp.fb.app_id }}" />
+    <meta property="fb:app_id" content="{{ site.ogp.fb.app_id }}" />-->
     <meta property="og:description" content="{{ description }}" />
 
     <!--[if lt IE 9]>
@@ -43,7 +44,10 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet">
+    <link href="//fonts.useso.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet">
+    -->
 
     <link href="{{ '/assets/lib/easy-social-buttons/jquery.easy-social-buttons.css' | prepend: site.baseurl }}" rel="stylesheet">
     <link href="{{ '/assets/css/style.css' | prepend: site.baseurl }}" rel="stylesheet">
@@ -89,6 +93,15 @@
             </ul>
             <hr class="with-no-margin margin-bottom"/>
 
+            <div>
+                <h1>Tags</h1>
+                <ul>
+                    {% for tag in site.tags %}
+                    <a href="{{ site.baseurl }}/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a> &nbsp;
+                  {% endfor %}
+                </ul>
+            </div>
+
             <div class="block sticky">
                 <h1>{{ site.str_recent_posts }}</h1>
                 <ul>
@@ -108,7 +121,11 @@
     </div>
 </footer>
 
+<!--
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 <script src="{{ '/assets/lib/garand-sticky/jquery.sticky.js' | prepend: site.baseurl }}"></script>
 <script src="{{ '/assets/lib/easy-social-buttons/jquery.social-info.js' | prepend: site.baseurl }}"></script>
 <script src="{{ '/assets/lib/easy-social-buttons/jquery.easy-social-buttons.js' | prepend: site.baseurl }}"></script>

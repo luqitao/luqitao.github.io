@@ -2,7 +2,7 @@
 
 {% if icons.rss %}
 <li>
-    <a href="{{ '/feed.xml' | prepend: site.baseurl }}">
+    <a href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">
         <i class="fa fa-fw fa-rss"></i>
     </a>
 </li>

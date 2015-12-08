@@ -1,6 +1,7 @@
 // typography.
-$font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-$font-size: 20px;
+//$font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+$font-family: 'MicroSoft Yahei', Helvetica, Arial, sans-serif;
+$font-size: 16px;
 
 // source code typography.
 $code-font-family: Consolas, Monaco, 'Andale Mono', monospace;
@@ -10,15 +11,18 @@ $code-font-size: 0.85em;
 $margin: 50px;
 
 // brand color.
-$brand-color: #5271f9;
+// $brand-color: #f98752;
+$brand-color: #2583ad;
 
 // other major colors.
-$site-title-color: rgba(#000, .6);
+// $site-title-color: rgba(#000, .6);
+$site-title-color: rgba(#2583ad, .8);
 $page-title-color: $brand-color;
 $background-color: #fff;
 $border-color: rgba(#000, .1);
 
 // typography colors.
 $text-color: #383838;
-$link-color: darken($brand-color, 40%);
+// $link-color: darken($brand-color, 40%);
+$link-color: $brand-color;
 $blockquote-color: #777;

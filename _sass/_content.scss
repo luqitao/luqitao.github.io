@@ -126,11 +126,11 @@
             margin-bottom: $margin;
             .panel {
                 padding: 1em 1.5em;
-                background-color: rgba($page-title-color, .100);
+                //background-color: rgba($page-title-color, .2);
                 h1 {
                     margin: 0;
                     &, a {
-                        color: rgba($page-title-color, .100);
+                        color: $page-title-color;
                     }
                 }
                 ul.meta, ul.tags {
@@ -209,6 +209,17 @@
             .esb:last-child {
                 margin-right: 0;
             }
+        }
+    }
+
+    .tags-box{
+        li {
+            list-style: none;
+            font-weight: bold;
+            margin-top:10px;
+        }
+        .size{
+            font-size: 0.7em; font-weight: bold; vertical-align: super;
         }
     }
 }
