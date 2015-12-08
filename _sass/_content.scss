@@ -130,7 +130,7 @@
                 h1 {
                     margin: 0;
                     &, a {
-                        color: $page-title-color;
+                        color: rgba(#FFFFFF, .2);
                     }
                 }
                 ul.meta, ul.tags {
