@@ -17,7 +17,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "tianshan"
+      author: "luqitao"
       email: "luqt2011@163.com"
 
 #
@@ -54,7 +54,7 @@ permalink: pretty
 # Scripts.
 #
 google_analytics: UA-60561225-1
-disqus: tianshan
+disqus: luqitao
 
 #
 # Localizations.
