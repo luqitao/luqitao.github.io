@@ -126,11 +126,11 @@
             margin-bottom: $margin;
             .panel {
                 padding: 1em 1.5em;
-                background-color: rgba(#FFFFFF, .2);
+                background-color: rgba($page-title-color, .2);
                 h1 {
                     margin: 0;
                     &, a {
-                        color: rgba(#FFFFFF, .2);
+                        color: rgba($page-title-color, .2);
                     }
                 }
                 ul.meta, ul.tags {
