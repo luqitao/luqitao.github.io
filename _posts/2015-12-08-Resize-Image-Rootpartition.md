@@ -5,10 +5,10 @@ tags: Ceph
 ---
 
 
-首先要用命令增加分区大小，针对qemu-kvm使用以下命令：<br>
 ```sh
 qemu-img resize yourname.img +10G 
 ```
+首先要用命令增加分区大小，针对qemu-kvm使用以上命令
 
 # LVM #
 
