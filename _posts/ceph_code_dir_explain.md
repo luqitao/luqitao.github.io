@@ -1,3 +1,9 @@
+---
+layout: post
+title: Ceph源代码目录结构详解
+tags: Ceph
+---
+
 Ceph源代码目录结构详解
 ---
 从GitHub上Clone的Ceph项目，其目录下主要文件夹和文件的内容为：
