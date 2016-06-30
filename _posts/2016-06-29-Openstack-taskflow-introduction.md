@@ -9,11 +9,12 @@ Openstack taskflow介绍
 
 # 前言
 TaskFlow是OpenStack中的一个Python库，主要目的是让task(任务)执行更加容易可靠，能将轻量的任务对象组织成一个有序的流。
-
 若未安装taskflow到环境中:
+
 ```
 pip install taskflow
 ```
+
 目前TaskFlow支持三种模式：
 > - 线性：运行一个任务或流的列表，是一个接一个串行方式运行。
 > - 无序：运行一个任务或流的列表，以并行的方式运行，顺序与列表顺序无关，任务之间不存在依赖关系。
@@ -68,9 +69,7 @@ B : b
 ```
 
 说明：A任务永远都会在B任务之前。
-
 检查任务状态
-
 修改代码：
 
 ```
@@ -108,7 +107,6 @@ engine.run()
 ```
 
 注册了一个监听器将报告给flow_wtach函数。
-
 Output:
 
 ```
@@ -127,7 +125,6 @@ engine.notifier.register('SUCCESS', flow_watch)
 ```
 
 也可以做到监听任务：
-
 
 # 任务异常
 在一组任务中，若其中一个发生异常，流的任务失败，就需要处理异常工作：
@@ -189,5 +186,4 @@ flow failed:C IOError
 ```
 
 说明，如果出现异常，会执行revert函数进行清理工作。
-
 相关链接：[TaskFlow维基](https://wiki.openstack.org/wiki/TaskFlow)
