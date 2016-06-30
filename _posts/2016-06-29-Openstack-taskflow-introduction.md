@@ -21,6 +21,7 @@ pip install taskflow
 
 # 任务的状态
 就像任何其他的任务流系统一样，每个任务都有一些状态：
+
 - PENDING 
 - RUNNING 
 - SUCCESS 
@@ -58,16 +59,20 @@ flow = lf.Flow('simple-linear-listen').add(
 engine = taskflow.engines.load(flow, store=dict(a_msg='a', b_msg='b'))
 engine.run()
 ```
+
 Output:
+
 ```
 A : a
 B : b
 ```
+
 说明：A任务永远都会在B任务之前。
 
 检查任务状态
 
 修改代码：
+
 ```
 #!/usr/bin/env python
 # coding=utf-8
@@ -101,6 +106,7 @@ engine = taskflow.engines.load(flow, store = dict(a_msg = 'a', b_msg = 'b'))
 engine.notifier.register('*', flow_watch)
 engine.run()
 ```
+
 注册了一个监听器将报告给flow_wtach函数。
 
 Output:
@@ -115,15 +121,17 @@ Flow Details:{'engine': <taskflow.engines.action_engine.engine.SerialActionEngin
 ```
 
 当流状态发生改变，就会被捕捉到，若只监听流状态，也可以改为:
+
 ```
 engine.notifier.register('SUCCESS', flow_watch)
 ```
-也可以做到监听任务：
-```
 
-```
+也可以做到监听任务：
+
+
 # 任务异常
 在一组任务中，若其中一个发生异常，流的任务失败，就需要处理异常工作：
+
 ```
 #!/usr/bin/env python
 # coding=utf-8
@@ -168,7 +176,9 @@ try:
 except Exception as e:
     print("flow failed:{}" .format(e))
 ```
+
 Output:
+
 ```
 A : a
 B : b
@@ -177,6 +187,7 @@ B b revert
 A a revert
 flow failed:C IOError
 ```
+
 说明，如果出现异常，会执行revert函数进行清理工作。
 
 相关链接：[TaskFlow维基](https://wiki.openstack.org/wiki/TaskFlow)
